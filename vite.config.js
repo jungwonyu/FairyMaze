@@ -4,9 +4,9 @@ import path from 'path';
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'js/index.js'),
+      entry: path.resolve(__dirname, 'js/GameConfig.js'),
       name: 'IceAdventure',
-      fileName: 'game',
+      fileName: 'index',
       formats: ['es']
     },
     outDir: 'js',
