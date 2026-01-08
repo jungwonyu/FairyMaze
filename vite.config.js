@@ -1,7 +1,9 @@
+
 import { defineConfig } from 'vite';
 import path from 'path';
 
 export default defineConfig({
+  base: '/FairyMaze/',
   build: {
     lib: {
       entry: path.resolve(__dirname, 'js/GameConfig.js'),
