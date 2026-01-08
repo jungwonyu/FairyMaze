@@ -6,9 +6,9 @@ node_modules/
 .DS_Store
 Thumbs.db
 
-# 빌드 결과물
-/dist
-/build
+# # 빌드 결과물
+# /dist
+# /build
 
 # 로그 파일
 npm-debug.log*

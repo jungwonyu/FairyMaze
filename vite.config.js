@@ -5,7 +5,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'js/GameConfig.js'),
-      name: 'FairyMaze',
+      name: '/FairyMaze/',
       fileName: 'index',
       formats: ['es']
     },
