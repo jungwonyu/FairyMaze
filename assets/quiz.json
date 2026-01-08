@@ -1,0 +1,14 @@
+{
+  "quizzes": [
+    { "answer": "whisper", "image": "assets/images/quiz/whisper.png" },
+    { "answer": "journey", "image": "assets/images/quiz/journey.png" },
+    { "answer": "protect", "image": "assets/images/quiz/protect.png" },
+    { "answer": "discover", "image": "assets/images/quiz/discover.png" },
+    { "answer": "feather", "image": "assets/images/quiz/feather.png" },
+    { "answer": "mountain", "image": "assets/images/quiz/mountain.png" },
+    { "answer": "puzzle", "image": "assets/images/quiz/puzzle.png" },
+    { "answer": "adventure", "image": "assets/images/quiz/adventure.png" },
+    { "answer": "treasure", "image": "assets/images/quiz/treasure.png" },
+    { "answer": "harmony", "image": "assets/images/quiz/harmony.png" }
+  ]
+}

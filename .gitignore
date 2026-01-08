@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# 환경별 설정 파일
+.env
+.DS_Store
+Thumbs.db
+
+# 빌드 결과물
+/dist
+/build
+
+# 로그 파일
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 기타
+.vscode/

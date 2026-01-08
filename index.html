@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>꼬마 탐험가의 보물찾기</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      overflow: hidden;
+    }
+    #level-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 30px 10px 0 20px;
+      z-index: 1000;
+    }
+    #level-buttons button {
+      min-width: 80px;
+      padding: 8px 0;
+      font-size: 15px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: background 0.2s;
+    }
+    #level-buttons button:hover {
+      background: #0056b3;
+    }
+    #level-buttons span {
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #007bff;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="level-buttons">
+    <span>레벨 선택</span>
+    <button onclick="window.dispatchEvent(new CustomEvent('levelSelect', { detail: 1 }))">Level 1</button>
+    <button onclick="window.dispatchEvent(new CustomEvent('levelSelect', { detail: 2 }))">Level 2</button>
+    <button onclick="window.dispatchEvent(new CustomEvent('levelSelect', { detail: 3 }))">Level 3</button>
+    <button onclick="window.dispatchEvent(new CustomEvent('levelSelect', { detail: 4 }))">Level 4</button>
+    <button onclick="window.dispatchEvent(new CustomEvent('levelSelect', { detail: 5 }))">Level 5</button>
+    <button onclick="window.dispatchEvent(new CustomEvent('levelSelect', { detail: 6 }))">Level 6</button>
+    <button onclick="window.dispatchEvent(new CustomEvent('levelSelect', { detail: 7 }))">Level 7</button>
+    <button onclick="window.dispatchEvent(new CustomEvent('levelSelect', { detail: 8 }))">Level 8</button>
+    <button onclick="window.dispatchEvent(new CustomEvent('levelSelect', { detail: 9 }))">Level 9</button>
+    <button onclick="window.dispatchEvent(new CustomEvent('levelSelect', { detail: 10 }))">Level 10</button>
+  </div>
+  <div id="game-container"></div>
+  <script type="module" src="/js/index.js"></script>
+</body>
+</html>
