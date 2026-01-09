@@ -75,7 +75,7 @@ export default class GameScene extends Phaser.Scene {
   // 3. 매 프레임 업데이트 단계 (update)
   // ===================================
   update() {
-    if (this.isMoving || this.isJumping || this.isGemAlertActive || this.isStunned) return;
+    if (this.isMoving || this.isJumping || this.isStunned) return;
 
     let dx = 0;
     let dy = 0;

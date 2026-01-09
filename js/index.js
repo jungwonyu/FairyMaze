@@ -96,7 +96,7 @@ class P extends Phaser.Scene {
   // 3. 매 프레임 업데이트 단계 (update)
   // ===================================
   update() {
-    if (this.isMoving || this.isJumping || this.isGemAlertActive || this.isStunned) return;
+    if (this.isMoving || this.isJumping || this.isStunned) return;
     let s = 0, e = 0, i = "idle";
     if (this.cursors.left.isDown ? (s = -a, i = "walk-left") : this.cursors.right.isDown ? (s = a, i = "walk-right") : this.cursors.up.isDown ? (e = -a, i = "walk-up") : this.cursors.down.isDown && (e = a, i = "walk-down"), s !== 0 || e !== 0) {
       const o = this.player.x + s, n = this.player.y + e, t = 0 + a / 2, d = 0 + a / 2, l = this.sys.game.config.width - a / 2, r = this.sys.game.config.height - a / 2 + a;
